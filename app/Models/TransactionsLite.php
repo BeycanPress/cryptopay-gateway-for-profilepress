@@ -8,13 +8,13 @@ use BeycanPress\CryptoPayLite\Models\AbstractTransaction;
 
 class TransactionsLite extends AbstractTransaction
 {
-    public string $addon = 'pp';
+    public string $addon = 'profilepress';
 
     /**
      * @return void
      */
     public function __construct()
     {
-        parent::__construct('pp_transaction');
+        parent::__construct('profilepress_transaction');
     }
 }

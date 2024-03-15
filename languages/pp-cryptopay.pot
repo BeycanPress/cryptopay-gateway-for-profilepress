@@ -1,0 +1,96 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: ProfilePress - CryptoPay Gateway\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-03-15 11:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.6.6; wp-6.4.3\n"
+"X-Domain: pp-cryptopay"
+
+#. Description of the plugin
+msgid "Adds Cryptocurrency payment gateway (CryptoPay) for ProfilePress."
+msgstr ""
+
+#. Author of the plugin
+msgid "BeycanPress LLC"
+msgstr ""
+
+#: profilepress-cryptopay-gateway.php:50 profilepress-cryptopay-gateway.php:60
+msgid "clicking here"
+msgstr ""
+
+#: app/Gateways/GatewayPro.php:20
+msgid "CryptoPay"
+msgstr ""
+
+#: app/Gateways/GatewayLite.php:20
+msgid "CryptoPay Lite"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://beycanpress.com"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://beycanpress.com/cryptopay/"
+msgstr ""
+
+#: app/Loader.php:95
+msgid "Pay now"
+msgstr ""
+
+#. Name of the plugin
+msgid "ProfilePress - CryptoPay Gateway"
+msgstr ""
+
+#: profilepress-cryptopay-gateway.php:60
+#, php-format
+msgid ""
+"ProfilePress - CryptoPay Gateway: This plugin is an extra feature plugin so "
+"it cannot do anything on its own. It needs CryptoPay to work. You can buy "
+"CryptoPay by %s."
+msgstr ""
+
+#: profilepress-cryptopay-gateway.php:50
+#, php-format
+msgid ""
+"ProfilePress - CryptoPay Gateway: This plugin requires ProfilePress to work. "
+"You can download ProfilePress by %s."
+msgstr ""
+
+#: app/Loader.php:26
+msgid "ProfilePress Transactions"
+msgstr ""
+
+#: app/Loader.php:98
+msgid "Retry payment"
+msgstr ""
+
+#: app/Gateways/AbstractGateway.php:111
+msgid "View transaction"
+msgstr ""
+
+#: app/Gateways/AbstractGateway.php:74
+msgid ""
+"You can pay with supported blockchain networks and currencies under these "
+"networks."
+msgstr ""
+
+#: app/Gateways/AbstractGateway.php:142
+msgid "You will be redirected to the payment page."
+msgstr ""
+
+#: app/Gateways/AbstractGateway.php:70
+msgid ""
+"Your customers can pay with supported blockchain networks and currencies "
+"under these networks"
+msgstr ""

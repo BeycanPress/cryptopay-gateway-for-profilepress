@@ -42,22 +42,24 @@ Helpers::registerLiteModel(BeycanPress\CryptoPay\PP\Models\TransactionsLite::cla
 
 load_plugin_textdomain('pp-cryptopay', false, basename(__DIR__) . '/languages');
 
-if (!defined('PPRESS_VERSION_NUMBER')) {
-    add_action('admin_notices', function (): void {
-        ?>
-            <div class="notice notice-error">
-                <p><?php echo sprintf(esc_html__('ProfilePress - CryptoPay Gateway: This plugin requires ProfilePress to work. You can download ProfilePress by %s.', 'pp-cryptopay'), '<a href="https://wordpress.org/plugins/wp-user-avatar/" target="_blank">' . esc_html__('clicking here', 'pp-cryptopay') . '</a>'); ?></p>
-            </div>
-        <?php
-    });
-} elseif (Helpers::bothExists()) {
-    new BeycanPress\CryptoPay\PP\Loader();
-} else {
-    add_action('admin_notices', function (): void {
-        ?>
-            <div class="notice notice-error">
-                <p><?php echo sprintf(esc_html__('ProfilePress - CryptoPay Gateway: This plugin is an extra feature plugin so it cannot do anything on its own. It needs CryptoPay to work. You can buy CryptoPay by %s.', 'pp-cryptopay'), '<a href="https://beycanpress.com/product/cryptopay-all-in-one-cryptocurrency-payments-for-wordpress/?utm_source=wp_org_addons&utm_medium=pp" target="_blank">' . esc_html__('clicking here', 'pp-cryptopay') . '</a>'); ?></p>
-            </div>
-        <?php
-    });
-}
+add_action('plugins_loaded', function (): void {
+    if (!defined('PPRESS_VERSION_NUMBER')) {
+        add_action('admin_notices', function (): void {
+            ?>
+                <div class="notice notice-error">
+                    <p><?php echo sprintf(esc_html__('ProfilePress - CryptoPay Gateway: This plugin requires ProfilePress to work. You can download ProfilePress by %s.', 'pp-cryptopay'), '<a href="https://wordpress.org/plugins/wp-user-avatar/" target="_blank">' . esc_html__('clicking here', 'pp-cryptopay') . '</a>'); ?></p>
+                </div>
+            <?php
+        });
+    } elseif (Helpers::bothExists()) {
+        new BeycanPress\CryptoPay\PP\Loader();
+    } else {
+        add_action('admin_notices', function (): void {
+            ?>
+                <div class="notice notice-error">
+                    <p><?php echo sprintf(esc_html__('ProfilePress - CryptoPay Gateway: This plugin is an extra feature plugin so it cannot do anything on its own. It needs CryptoPay to work. You can buy CryptoPay by %s.', 'pp-cryptopay'), '<a href="https://beycanpress.com/product/cryptopay-all-in-one-cryptocurrency-payments-for-wordpress/?utm_source=wp_org_addons&utm_medium=pp" target="_blank">' . esc_html__('clicking here', 'pp-cryptopay') . '</a>'); ?></p>
+                </div>
+            <?php
+        });
+    }
+});
