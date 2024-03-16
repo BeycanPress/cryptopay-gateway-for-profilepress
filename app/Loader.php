@@ -123,9 +123,14 @@ class Loader
      */
     public function registerGateways(array $methods): array
     {
-        return array_merge($methods, [
-            Gateways\GatewayPro::get_instance(),
-            Gateways\GatewayLite::get_instance()
-        ]);
+        if (Helpers::exists()) {
+            $methods[] = Gateways\GatewayPro::get_instance();
+        }
+
+        if (Helpers::liteExists()) {
+            $methods[] = Gateways\GatewayLite::get_instance();
+        }
+
+        return $methods;
     }
 }
