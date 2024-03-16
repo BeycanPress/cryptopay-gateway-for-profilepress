@@ -58,7 +58,11 @@ class Loader
             $order->delete_meta('cryptopay_payment_url');
             $subscription = SubscriptionFactory::fromId($order->subscription_id);
             if ($subscription->exists()) {
-                $subscription->activate_subscription();
+                if ($subscription->has_trial()) {
+                    $subscription->enable_subscription_trial();
+                } else {
+                    $subscription->activate_subscription();
+                }
             }
         } else {
             $order->fail_order();
