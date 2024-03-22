@@ -102,7 +102,7 @@ class Loader
                 $text = esc_html__('Retry payment', 'pp-cryptopay');
             }
 
-            echo Helpers::run('view', 'components/link', [
+            Helpers::run('viewEcho', 'components/link', [
                 'url' => esc_url_raw($paymentUrl),
                 'text' => $text
             ]);
