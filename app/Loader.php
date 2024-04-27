@@ -30,6 +30,7 @@ class Loader
                 'orderId' => function ($tx) {
                     return Helpers::run('view', 'components/link', [
                         'url' => sprintf(admin_url('admin.php?page=ppress-orders&ppress_order_action=edit&id=1'), $tx->orderId), // @phpcs:ignore
+                        /* translators: %d: order id */
                         'text' => sprintf(esc_html__('View order #%d', 'gf-cryptopay'), $tx->orderId)
                     ]);
                 }
