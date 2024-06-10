@@ -15,20 +15,26 @@ Cryptocurrency Payment Gateway for ProfilePress, Cryptocurrency payments for Wor
 
 ### Cryptocurrency Payment Gateway for ProfilePress by CryptoPay
 
-First of all, we would like to point out that this plugin is not a standalone plugin. This plugin is a **<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=cryptopay_pp">cryptocurrency payment gateway for ProfilePress</a>**. In other words, users who want to sell courses with cryptocurrency payments can use WordPress and ProfilePress. However, this plugin is a plugin for CryptoPay and a cryptocurrency payment gateway for ProfilePress. So it's actually CryptoPay, which is the main plugin that handles cryptocurrency payments for WordPress. Therefore, users must have both plugins.
+Hello, do you sell memberships with ProfilePress on your WordPress site? Do you also have customers or services related to the crypto ecosystem? So, do you want to accept **<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=cryptopay_pp">crypto payments</a>** on your website or sell your memberships in crypto with ProfilePress?
 
-Thanks to this plugin, you can receive **<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=cryptopay_pp">cryptocurrency payments</a>** from many Blockchain networks, especially Bitcoin, Ethereum, Solana, and sell paid courses with cryptocurrencies on your WordPress site with the ProfilePress plugin.
+If the answer to all these questions is yes, you are in the right place. Because CryptoPay is developed entirely for WordPress and supports 15+ WordPress plugins like ProfilePress. (Has WooCommerce payment gateway built-in)
+
+With CryptoPay, you can receive crypto payments that are completely peer-to-peer (that is, your customers pay directly to your wallet, without any intermediary processes) and commission-free (yes, completely zero commission).
+
+This integration plugin will work with both the paid version and the free (CryptoPay Lite). In this way, you can use whatever you want according to your needs.
 
 What is CryptoPay?
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3vaoFL4XG10" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Review CryptoPay Lite: **<a href="https://wordpress.org/plugins/cryptopay-wc-lite/">Cryptocurrency payment gateway for ProfilePress</a>**
+#### This plugin is an integration plugin. So basically you need to have the following two plugins.
 
-Review CryptoPay Premium: **<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=cryptopay_pp">Cryptocurrency payments for WooCommerce</a>**
+**<a href="https://wordpress.org/plugins/cryptopay-wc-lite/">Review CryptoPay Lite</a>**
 
-Review ProfilePress: **<a href="https://wordpress.org/plugins/wp-user-avatar/">ProfilePress</a>**
+**<a href="https://beycanpress.com/cryptopay/?utm_source=wporg_readme&utm_medium=profilepress">Review CryptoPay Premium</a>**
 
-See **<a href="https://cryptopay.beycanpress.net/" target="_blank">Demo</a>**
+**<a href="https://wordpress.org/plugins/wp-user-avatar/">Review ProfilePress</a>**
+
+See CryptoPay **<a href="https://cryptopay.beycanpress.net/" target="_blank">Demo</a>**
 
 = Privacy notices =
 
@@ -41,6 +47,12 @@ With the default configuration, this plugin, in itself, does not:
 = Translations =
 
 You can easily translate with Loco translate.
+
+== Screenshots ==
+
+1. Screen shot 1
+2. Screen shot 2
+3. Screen shot 3
 
 == Installation ==
 
