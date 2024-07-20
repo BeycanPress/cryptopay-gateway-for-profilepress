@@ -19,9 +19,9 @@ defined('ABSPATH') || exit;
  * License:     GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  * Text Domain: pp-cryptopay
- * Tags: Cryptopay, Cryptocurrency, WooCommerce, WordPress, MetaMask, Trust, Binance, Wallet, Ethereum, Bitcoin, Binance smart chain, Payment, Plugin, Gateway, Moralis, Converter, API, coin market cap, CMC
+ * Tags: Bitcoin, Ethereum, Crypto, Payment, ProfilePress
  * Requires at least: 5.0
- * Tested up to: 6.5.0
+ * Tested up to: 6.6
  * Requires PHP: 8.1
 */
 
@@ -37,12 +37,22 @@ define('PP_CRYPTOPAY_SLUG', plugin_basename(__FILE__));
 
 use BeycanPress\CryptoPay\Integrator\Helpers;
 
-Helpers::registerModel(BeycanPress\CryptoPay\PP\Models\TransactionsPro::class);
-Helpers::registerLiteModel(BeycanPress\CryptoPay\PP\Models\TransactionsLite::class);
+/**
+ * @return void
+ */
+function ppressCryptoPayRegisterModels(): void
+{
+    Helpers::registerModel(BeycanPress\CryptoPay\PP\Models\TransactionsPro::class);
+    Helpers::registerLiteModel(BeycanPress\CryptoPay\PP\Models\TransactionsLite::class);
+}
+
+ppressCryptoPayRegisterModels();
 
 load_plugin_textdomain('pp-cryptopay', false, basename(__DIR__) . '/languages');
 
 add_action('plugins_loaded', function (): void {
+    ppressCryptoPayRegisterModels();
+
     if (!defined('PPRESS_VERSION_NUMBER')) {
         Helpers::requirePluginMessage('ProfilePress', 'https://wordpress.org/plugins/wp-user-avatar/');
     } elseif (Helpers::bothExists()) {
