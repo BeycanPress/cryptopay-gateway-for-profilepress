@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
 
 /**
  * Plugin Name: CryptoPay Gateway for ProfilePress
- * Version:     1.0.0
+ * Version:     1.0.1
  * Plugin URI:  https://beycanpress.com/cryptopay/
  * Description: Adds Cryptocurrency payment gateway (CryptoPay) for ProfilePress.
  * Author:      BeycanPress LLC
@@ -29,7 +29,7 @@ defined('ABSPATH') || exit;
 require_once __DIR__ . '/vendor/autoload.php';
 
 define('PP_CRYPTOPAY_FILE', __FILE__);
-define('PP_CRYPTOPAY_VERSION', '1.0.0');
+define('PP_CRYPTOPAY_VERSION', '1.0.1');
 define('PP_CRYPTOPAY_KEY', basename(__DIR__));
 define('PP_CRYPTOPAY_URL', plugin_dir_url(__FILE__));
 define('PP_CRYPTOPAY_DIR', plugin_dir_path(__FILE__));
