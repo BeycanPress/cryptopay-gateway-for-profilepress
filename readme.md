@@ -10,6 +10,6 @@ First of all, you must have one of the Lite or Premium versions of CryptoPay. Be
 
 As you can see in the pictures, you can then start receiving crypto payments directly with ProfilePress.
 
-<a href="https://ibb.co/ZmhpQzF"><img src="https://i.ibb.co/GTV4ZQ8/Screenshot-1.png" alt="Screenshot-1" border="0"></a>
-<a href="https://ibb.co/jzLpDSb"><img src="https://i.ibb.co/RNC5cqY/Screenshot-2.png" alt="Screenshot-2" border="0"></a>
-<a href="https://ibb.co/3N1nmy7"><img src="https://i.ibb.co/NjxM26s/Screenshot-3.png" alt="Screenshot-3" border="0"></a>
+![Screenshot-1](https://i.ibb.co/GTV4ZQ8/Screenshot-1.png)
+![Screenshot-2](https://i.ibb.co/RNC5cqY/Screenshot-2.png)
+![Screenshot-3](https://i.ibb.co/NjxM26s/Screenshot-3.png)
