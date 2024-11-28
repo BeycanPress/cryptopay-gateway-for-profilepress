@@ -11,7 +11,7 @@ defined('ABSPATH') || exit;
 
 /**
  * Plugin Name: CryptoPay Gateway for ProfilePress
- * Version:     1.0.1
+ * Version:     1.0.2
  * Plugin URI:  https://beycanpress.com/cryptopay/
  * Description: Adds Cryptocurrency payment gateway (CryptoPay) for ProfilePress.
  * Author:      BeycanPress LLC
@@ -21,7 +21,7 @@ defined('ABSPATH') || exit;
  * Text Domain: pp-cryptopay
  * Tags: Bitcoin, Ethereum, Crypto, Payment, ProfilePress
  * Requires at least: 5.0
- * Tested up to: 6.6
+ * Tested up to: 6.7.1
  * Requires PHP: 8.1
 */
 
@@ -29,7 +29,7 @@ defined('ABSPATH') || exit;
 require_once __DIR__ . '/vendor/autoload.php';
 
 define('PP_CRYPTOPAY_FILE', __FILE__);
-define('PP_CRYPTOPAY_VERSION', '1.0.1');
+define('PP_CRYPTOPAY_VERSION', '1.0.2');
 define('PP_CRYPTOPAY_KEY', basename(__DIR__));
 define('PP_CRYPTOPAY_URL', plugin_dir_url(__FILE__));
 define('PP_CRYPTOPAY_DIR', plugin_dir_path(__FILE__));
@@ -48,13 +48,15 @@ function ppressCryptoPayRegisterModels(): void
 
 ppressCryptoPayRegisterModels();
 
-load_plugin_textdomain('pp-cryptopay', false, basename(__DIR__) . '/languages');
+add_action('init', function (): void {
+    load_plugin_textdomain('pp-cryptopay', false, basename(__DIR__) . '/languages');
+});
 
 add_action('plugins_loaded', function (): void {
     ppressCryptoPayRegisterModels();
 
     if (!defined('PPRESS_VERSION_NUMBER')) {
-        Helpers::requirePluginMessage('ProfilePress', 'https://wordpress.org/plugins/wp-user-avatar/');
+        Helpers::requirePluginMessage('ProfilePress', admin_url('plugin-install.php?s=ProfilePress&tab=search&type=term'));
     } elseif (Helpers::bothExists()) {
         new BeycanPress\CryptoPay\PP\Loader();
     } else {
